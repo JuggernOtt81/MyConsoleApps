@@ -13,7 +13,9 @@ namespace StripperDates
     {
         public static void Main(string[] args)
         {
-            string filePath = @"C:\Users\lawson\Desktop\StripperDates.txt";
+            //update the filePath to YOUR
+            //string filePath = @"<drive letter>:<\Users\<username>\<folder>\<custom file name>.txt">;
+            string filePath = @"C:\Users\JuggernOtt81\Desktop\StripperDates.txt";
 
             DateOnly today = DateOnly.FromDateTime(DateTime.Now);
             DateOnly plus85 = today.AddDays(85);
@@ -37,7 +39,7 @@ namespace StripperDates
             string line7 = "This is the MAXIMUM we could pay for MINT CONDITION boxes based on the dates.";
             string line8 = "But all boxes must still be graded for condition and adjustments to price should be expected.";
             
-            string[] lines = new string[] { line1, line0, line2, line0, line3, line0, line4, line0, line5, line0, line6, line0, line7, line0, line8 };
+            string[] lines = new string[] { line1,  line2,  line3,  line4,  line5,  line6,  line7,  line8 };
 
             void WriteIt()
             {
